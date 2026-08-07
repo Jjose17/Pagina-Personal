@@ -40,7 +40,6 @@ body{
     margin-top: 2rem;
 }
 
-/* ===== Navbar ===== */
 .navbar{
     background-color: #0e238fcc;
     backdrop-filter: blur(6px);
@@ -84,7 +83,33 @@ body{
     color: #4299e1;
 }
 
-/* ===== Hero ===== */
+@media (max-width: 700px){
+    body{
+        padding-top: 118px;
+    }
+
+    .navbar{
+        padding: 0.6rem 0;
+    }
+
+    .nav-container{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .logo{
+        font-size: 1.05rem;
+        text-align: center;
+    }
+
+    .nav-links{
+        gap: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 0.85rem;
+    }
+}
+
 .hero{
     text-align: center;
     padding: 4rem 0;
@@ -116,6 +141,20 @@ body{
     font-size: 1.2rem;
     color: #cbd5e0;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 700px){
+    .hero{
+        padding: 2.5rem 0;
+    }
+
+    .hero h1{
+        font-size: 1.7rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
 }
 
 .btn{
@@ -181,7 +220,6 @@ body{
     border-color: #4299e1;
 }
 
-/* ===== Layout grids ===== */
 .grid-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -200,7 +238,7 @@ body{
     }
 }
 
-/* ===== Sobre mi ===== */
+
 .info h3, .timeline h3{
     color: #4299e1;
     margin-bottom: 1rem;
@@ -241,7 +279,6 @@ body{
     color: #ffffff;
 }
 
-/* ===== Habilidades ===== */
 .skill-card{
     background-color: #1a1e29;
     border: 1px solid #3b4252;
@@ -322,7 +359,6 @@ body{
     color: #ffffff;
 }
 
-/* ===== Proyectos ===== */
 .project-card{
     background-color: #1a1e29;
     border: 1px solid #3b4252;
@@ -364,7 +400,6 @@ body{
     flex: 1;
 }
 
-/* ===== Modales de proyecto ===== */
 .project-modal{
     display: none;
     position: fixed;
@@ -474,7 +509,6 @@ body{
     color: #8b95a7;
 }
 
-/* ===== Footer ===== */
 .footer{
     text-align: center;
     padding: 2rem 0;
