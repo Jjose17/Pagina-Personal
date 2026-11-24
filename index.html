@@ -3,380 +3,812 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Jose Acevedo Melo | Portafolio</title>
-    <meta name="description" content="Portafolio de Juan Jose Acevedo Melo, estudiante de Ingeniería de Software y desarrollador web full stack (PHP, MySQL, JavaScript) en Bogotá, Colombia.">
+    <title>Juan José Acevedo Melo | Desarrollador de Software</title>
+    <meta name="description" content="Portafolio de Juan José Acevedo Melo, estudiante de Ingeniería de Software y desarrollador web full stack (PHP, MySQL, JavaScript, Java) en Bogotá, Colombia.">
+    
+    <!-- Favicon SVG moderno embebido -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%235444ea%22/><text x=%2250%%22 y=%2262%%22 font-family=%22monospace%22 font-size=%2244%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>&lt;ja/&gt;</text></svg>">
+
+    <!-- Open Graph para compartir en LinkedIn / WhatsApp / Redes -->
+    <meta property="og:title" content="Juan José Acevedo Melo | Desarrollador de Software">
+    <meta property="og:description" content="Portafolio profesional: proyectos web full stack reales, arquitectura MVC, POO en Java y 9 certificaciones oficiales.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Inter & Plus Jakarta Sans & Space Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Juan Jose Acevedo Melo</a>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <header id="inicio" class="hero">
-        <div class="hero-content">
-            <img src="itsme (1).jpg" alt="Foto de Juan Jose Acevedo Melo" class="profile-img">
-            <h1>Hola, soy Juan Jose Acevedo Melo</h1>
-            <p>Estudiante de quinto semestre de Ingeniería de Software, enfocado en desarrollo web full stack (frontend y backend) con 
-                HTML, CSS, JavaScript, PHP y MySQL.</p>
-            <p>He desarrollado proyectos reales: un sistema web de agenda de citas médicas, el sitio 
-                profesional de un consultorio con SEO aplicado, un CRM propio creado en equipo y una plataforma web para compraventas 
-                de motos, además de proyectos académicos en Java y web.</p>
-            <p>Cuento con 9 certificaciones de Oracle, Microsoft, Compensar y 
-                Cisco Networking Academy. Responsable, autónomo y con gran capacidad de aprendizaje. Busco práctica empresarial 
-                mediante contrato de aprendizaje (nivel técnico) para aportar en un equipo de desarrollo y seguir creciendo 
-                profesionalmente.</p>
+    <!-- ===================== NAVBAR CON SCROLLSPY Y MENÚ MÓVIL ===================== -->
+    <header class="navbar-wrapper">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#inicio" class="brand-logo">
+                    <span class="logo-code">&lt;ja/&gt;</span>
+                    <span class="logo-name">Juan José Acevedo</span>
+                </a>
 
-            <div class="hero-actions">
-                <a href="HV Juan Jose Acevedo.pdf" class="btn primario" download>Descargar CV</a>
-                <a href="#proyectos" class="btn secundario">Ver proyectos</a>
+                <!-- Enlaces de navegación con ScrollSpy -->
+                <ul class="nav-links" id="navMenu">
+                    <li><a href="#inicio" class="nav-item active">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="nav-item">Sobre mí</a></li>
+                    <li><a href="#habilidades" class="nav-item">Habilidades</a></li>
+                    <li><a href="#certificaciones" class="nav-item">Certificaciones</a></li>
+                    <li><a href="#proyectos" class="nav-item">Proyectos</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="#contacto" class="btn-talk">Hablemos <span class="arrow">↗</span></a>
+                    
+                    <!-- Botón Hamburguesa para Móviles -->
+                    <button class="nav-toggle" id="navToggle" aria-label="Abrir o cerrar menú de navegación">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
             </div>
-
-            <div class="links-sociales">
-                <a href="https://github.com/Jjose17" target="_blank" class="btn">GitHub</a>
-                <a href="https://www.linkedin.com/in/juan-jose-acevedo-melo/" target="_blank" class="btn">LinkedIn</a>
-                <a href="mailto:juanjoseacevedodeveloper@gmail.com" class="btn">Correo electrónico</a>
-            </div>
-        </div>
+        </nav>
     </header>
 
-    <section id="sobre-mi" class="section">
-        <h2 class="section-title">Sobre mí y formación</h2>
-        <div class="container grid-2">
-            <div class="info">
-                <h3>Acerca de mí</h3>
-                <p>Soy una persona proactiva, responsable y con alta capacidad de aprendizaje. Tengo 7 certificaciones de Oracle, Microsoft y Cisco Networking Academy. He trabajado en proyectos reales para clientes y en proyectos propios junto a un equipo, y mantengo un GitHub activo con proyectos académicos donde aplico buenas prácticas de desarrollo.</p>
-                <div class="alert-box">
-                    <span><strong>Disponibilidad:</strong> Inmediata. Ubicación: Bogotá D.C., Colombia.</span>
+    <main>
+        <!-- ===================== HERO SECTION ===================== -->
+        <section id="inicio" class="hero-section">
+            <div class="main-container hero-grid">
+                <!-- Columna Izquierda: Introducción Principal con Foto de Perfil -->
+                <div class="hero-left reveal">
+                    <div class="hero-top-row">
+                        <!-- Foto de perfil profesional con indicador activo -->
+                        <div class="profile-avatar-wrapper">
+                            <img src="itsme (1).jpg" alt="Foto de perfil de Juan José Acevedo Melo" class="hero-avatar-img">
+                            <span class="online-indicator" title="Disponible para contratación"></span>
+                        </div>
+
+                        <div class="status-pill">
+                            <span class="status-dot"></span>
+                            <span class="status-text">DISPONIBLE</span>
+                        </div>
+                    </div>
+
+                    <h1 class="hero-headline">
+                        Desarrollo web<br>
+                        con propósito.
+                    </h1>
+
+                    <div class="hero-subtext">
+                        <h2 class="hero-greeting">Hola, soy Juan José Acevedo.</h2>
+                        <p class="hero-description">
+                            Transformo ideas en experiencias digitales claras, funcionales y pensadas para las personas. 
+                            Estudiante de Ingeniería de Software enfocado en desarrollo web full stack (PHP, MySQL, JavaScript, POO con Java) con proyectos reales aplicados.
+                        </p>
+                    </div>
+
+                    <div class="hero-ctas">
+                        <a href="#proyectos" class="btn-primary">
+                            Explorar proyectos <span class="arrow">↗</span>
+                        </a>
+                        <a href="HV Juan Jose Acevedo.pdf" class="btn-secondary" download>
+                            Descargar CV <span class="arrow">↓</span>
+                        </a>
+                        <!-- Botón de copiar correo rápido -->
+                        <button class="btn-copy-mail" id="btnQuickCopy" data-email="juanjoseacevedodeveloper@gmail.com" title="Copiar correo al portapapeles">
+                            <span class="copy-icon">📋</span> Copiar correo
+                        </button>
+                    </div>
+
+                    <div class="hero-social-links">
+                        <a href="https://github.com/Jjose17" target="_blank" rel="noopener noreferrer" class="social-link">
+                            GitHub <span class="arrow">↗</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/juan-jose-acevedo-melo/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            LinkedIn <span class="arrow">↗</span>
+                        </a>
+                        <a href="mailto:juanjoseacevedodeveloper@gmail.com" class="social-link">
+                            Correo electrónico <span class="arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Mockup Visual Interactivo -->
+                <div class="hero-right reveal">
+                    <div class="hero-card-canvas">
+                        <div class="hero-card-header">
+                            <span class="badge-tag">DE LA IDEA A LA WEB</span>
+                            <h3 class="hero-card-title">Pensado con intención.<br>Construido con detalle.</h3>
+                        </div>
+
+                        <!-- Mockup de navegador / ventana digital -->
+                        <div class="browser-mockup">
+                            <div class="browser-topbar">
+                                <div class="window-controls">
+                                    <span class="win-dot"></span>
+                                    <span class="win-dot"></span>
+                                    <span class="win-dot"></span>
+                                </div>
+                                <div class="url-pill">
+                                    <span>juanjose-portfolio.dev</span>
+                                </div>
+                            </div>
+                            <div class="browser-body">
+                                <div class="mockup-brand">estudio.</div>
+                                <h4 class="mockup-heading">Diseño que conecta.<br>Desarrollo que funciona.</h4>
+                                <a href="#proyectos" class="mockup-btn">
+                                    Descubrir más <span class="arrow">↗</span>
+                                </a>
+                                <div class="mockup-skeleton">
+                                    <div class="skel-bar long"></div>
+                                    <div class="skel-bar short"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pill inferior del mockup -->
+                        <div class="hero-card-footer">
+                            <span class="code-symbol">&lt;/&gt;</span>
+                            <span>Interfaces + lógica + atención al detalle</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="timeline">
-                <h3>Formación académica</h3>
-                <ul>
-                    <li><strong>Ingeniería de Software</strong> – Fundación Universitaria Ucompensar (2025 – presente, quinto semestre). Ciclo actual: Técnica Profesional en Aplicaciones de Software.</li>
-                    <li><strong>Curso de Excel Empresarial (32 h)</strong> – Compensar (julio de 2026)</li>
-                    <li><strong>Bachiller académico</strong> – Guillermo León Valencia (2023)</li>
-                </ul>
+        <div class="section-divider"></div>
+
+        <!-- ===================== 01 / SOBRE MÍ Y MI FORMACIÓN ===================== -->
+        <section id="sobre-mi" class="section section-about">
+            <div class="main-container">
+                <span class="section-badge reveal">01 / SOBRE MÍ Y MI FORMACIÓN</span>
+                
+                <div class="about-hero-grid reveal">
+                    <div class="about-headline-col">
+                        <h2 class="section-title-large">
+                            La curiosidad es<br>mi punto de partida.
+                        </h2>
+                    </div>
+                    <div class="about-description-col">
+                        <p class="paragraph-lead">
+                            Me interesa crear soluciones que hagan más sencillas las cosas. Mi enfoque combina pensamiento lógico, sensibilidad por la experiencia de usuario y ganas constantes de seguir aprendiendo.
+                        </p>
+                        <p class="paragraph-muted">
+                            Busco convertir cada reto en una oportunidad para construir una web más útil, accesible y bien hecha. Con disponibilidad inmediata para práctica empresarial (nivel técnico) en Bogotá D.C. o modalidad remota.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bloques inferiores: Formación + Lo que me mueve -->
+                <div class="about-details-grid reveal">
+                    <div class="info-box-card">
+                        <span class="sub-badge">FORMACIÓN ACADÉMICA</span>
+                        <h3 class="info-card-title">Ingeniería de Software</h3>
+                        <p class="info-card-institution">Fundación Universitaria Ucompensar · 2025 – Presente</p>
+                        <p class="info-card-desc">
+                            Actualmente cursando quinto semestre. Ciclo activo: Técnica Profesional en Aplicaciones de Software. 
+                            Enfoque en desarrollo web full stack (PHP, MySQL, JavaScript, POO con Java) y metodologías ágiles.
+                        </p>
+                        <div class="academic-extra">
+                            <div class="extra-item">
+                                <strong>Compensar:</strong> Curso de Excel Empresarial (32 h) · jul. 2026
+                            </div>
+                            <div class="extra-item">
+                                <strong>Colegio Guillermo León Valencia:</strong> Bachiller académico · 2023
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="values-list-wrapper">
+                        <span class="sub-badge">LO QUE ME MUEVE</span>
+                        <ul class="values-numbered-list">
+                            <li>
+                                <span class="val-num">01</span>
+                                <span class="val-text">Crear interfaces intuitivas, responsivas y accesibles</span>
+                            </li>
+                            <li>
+                                <span class="val-num">02</span>
+                                <span class="val-text">Resolver problemas con soluciones mantenibles y código limpio</span>
+                            </li>
+                            <li>
+                                <span class="val-num">03</span>
+                                <span class="val-text">Aprender, compartir conocimientos y trabajar en equipo</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== 02 / HABILIDADES (DARK THEME) ===================== -->
+        <section id="habilidades" class="section section-skills-dark">
+            <div class="main-container">
+                <span class="section-badge-lime reveal">02 / HABILIDADES</span>
+                <h2 class="skills-headline reveal">Las herramientas. Y la forma de usarlas.</h2>
+                <p class="skills-subline reveal">Stack de referencia · Aplicado en proyectos reales, iniciativas propias y retos académicos.</p>
+
+                <!-- Grid de las 3 tarjetas de stack -->
+                <div class="skills-cards-grid">
+                    <!-- Tarjeta 1: Frontend -->
+                    <div class="skill-card-dark reveal">
+                        <span class="card-num-lime">01</span>
+                        <h3 class="skill-card-title">Frontend</h3>
+                        <p class="skill-card-desc">Interfaces rápidas, claras y adaptables.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">Figma</span>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2: Backend y datos -->
+                    <div class="skill-card-dark reveal">
+                        <span class="card-num-lime">02</span>
+                        <h3 class="skill-card-title">Backend y datos</h3>
+                        <p class="skill-card-desc">La lógica que sostiene la experiencia y la integridad de los datos.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PHP (MVC)</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Java (POO)</span>
+                            <span class="skill-tag">XAMPP</span>
+                            <span class="skill-tag">PHPUnit</span>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3: Herramientas -->
+                    <div class="skill-card-dark reveal">
+                        <span class="card-num-lime">03</span>
+                        <h3 class="skill-card-title">Herramientas</h3>
+                        <p class="skill-card-desc">Un flujo de trabajo ordenado, trazable y colaborativo.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Fundamentos Linux</span>
+                            <span class="skill-tag">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila Inferior: Habilidades Interpersonales -->
+                <div class="soft-skills-row reveal">
+                    <span class="soft-skills-label">HABILIDADES INTERPERSONALES</span>
+                    <div class="soft-skills-items">
+                        <span class="soft-item">Comunicación clara</span>
+                        <span class="soft-item">Trabajo en equipo</span>
+                        <span class="soft-item">Pensamiento crítico</span>
+                        <span class="soft-item">Adaptabilidad</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== 03 / CERTIFICACIONES ===================== -->
+        <section id="certificaciones" class="section section-certifications">
+            <div class="main-container">
+                <span class="section-badge reveal">03 / CERTIFICACIONES</span>
+                <h2 class="section-title-large reveal">Aprender también es construir.</h2>
+                <p class="section-subtext reveal">Un espacio para credenciales técnicas oficiales de Oracle, Cisco, Microsoft y nuevos aprendizajes.</p>
+
+                <div class="certifications-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card reveal">
+                        <span class="cert-category">01 / DESARROLLO WEB</span>
+                        <h3 class="cert-title">JavaScript Essentials 1</h3>
+                        <p class="cert-issuer">Cisco Networking Academy · oct. 2026</p>
+                        <a href="certificados/JavaScript_Essentials_1_JuanJoseAcevedoMelo.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            Ver credencial <span class="arrow">↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card reveal">
+                        <span class="cert-category">02 / PROGRAMACIÓN BACKEND</span>
+                        <h3 class="cert-title">Java Programming – English</h3>
+                        <p class="cert-issuer">Oracle Academy · nov. 2026</p>
+                        <a href="certificados/ACEVEDO MELO JUAN JOSE_Java_Programming.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            Ver credencial <span class="arrow">↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card reveal">
+                        <span class="cert-category">03 / SISTEMAS OPERATIVOS</span>
+                        <h3 class="cert-title">Fundamentos de Linux</h3>
+                        <p class="cert-issuer">Cisco Networking Academy · oct. 2026</p>
+                        <a href="certificados/Linux_Essentials_JuanJoseAcevedoMelo.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            Ver credencial <span class="arrow">↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card reveal">
+                        <span class="cert-category">04 / PROGRAMACIÓN POO</span>
+                        <h3 class="cert-title">Java Foundations</h3>
+                        <p class="cert-issuer">Oracle Academy · may. 2026</p>
+                        <a href="certificados/ACEVEDO MELO JUAN JOSE_Java_Foundations.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            Ver credencial <span class="arrow">↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Cert 5 -->
+                    <div class="cert-card reveal">
+                        <span class="cert-category">05 / BASES DE DATOS</span>
+                        <h3 class="cert-title">Database Foundations</h3>
+                        <p class="cert-issuer">Oracle Academy · nov. 2025</p>
+                        <a href="certificados/Oracle DB Fundations.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            Ver credencial <span class="arrow">↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Cert 6 -->
+                    <div class="cert-card reveal">
+                        <span class="cert-category">06 / ANÁLISIS DE DATOS</span>
+                        <h3 class="cert-title">Compilación con Power BI</h3>
+                        <p class="cert-issuer">Microsoft · abr. 2025</p>
+                        <a href="certificados/Introduccion a Power BI.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            Ver credencial <span class="arrow">↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Cert 7 -->
+                    <div class="cert-card reveal">
+                        <span class="cert-category">07 / FUNDAMENTOS DE SOFTWARE</span>
+                        <h3 class="cert-title">Java Fundamentals</h3>
+                        <p class="cert-issuer">Oracle Academy · nov. 2025</p>
+                        <a href="certificados/Oracle Java Fundamental.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            Ver credencial <span class="arrow">↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Cert 8 -->
+                    <div class="cert-card reveal">
+                        <span class="cert-category">08 / PROGRAMACIÓN</span>
+                        <h3 class="cert-title">Introducción a C#</h3>
+                        <p class="cert-issuer">Microsoft · mar. 2025</p>
+                        <a href="certificados/Introduccion a C.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            Ver credencial <span class="arrow">↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Cert 9 -->
+                    <div class="cert-card reveal">
+                        <span class="cert-category">09 / HERRAMIENTAS EMPRESARIALES</span>
+                        <h3 class="cert-title">Excel Empresarial (32h)</h3>
+                        <p class="cert-issuer">Compensar · jul. 2026</p>
+                        <a href="certificados/JUAN JOSE ACEVEDO MELO_EXCEL.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            Ver credencial <span class="arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== 04 / PROYECTOS CON FILTRO INTERACTIVO ===================== -->
+        <section id="proyectos" class="section section-projects">
+            <div class="main-container">
+                <span class="section-badge reveal">04 / PROYECTOS PROFESIONALES Y ACADÉMICOS</span>
+
+                <div class="projects-header-grid reveal">
+                    <div>
+                        <h2 class="section-title-large">Ideas que se convierten<br>en experiencias.</h2>
+                        <span class="projects-guide-tag">PROYECTOS DESTACADOS · SOLUCIONES REALES Y APLICADAS</span>
+                    </div>
+                    <div class="projects-quote-col">
+                        <p class="quote-text">Cada proyecto, un problema por resolver.<br>Cada solución, una oportunidad para mejorar.</p>
+                    </div>
+                </div>
+
+                <!-- TABS DE FILTRO INTERACTIVO -->
+                <div class="filter-tabs-container reveal">
+                    <button class="filter-tab active" data-filter="all">Todos los proyectos (<span id="count-all">10</span>)</button>
+                    <button class="filter-tab" data-filter="real">Clientes &amp; Reales</button>
+                    <button class="filter-tab" data-filter="team">En Equipo &amp; CRM</button>
+                    <button class="filter-tab" data-filter="java">Software &amp; Java POO</button>
+                    <button class="filter-tab" data-filter="web">Web &amp; APIs</button>
+                </div>
+
+                <!-- Grid Principal de Proyectos Destacados (Fichas con Preview) -->
+                <div class="projects-grid" id="projectsContainer">
+                    <!-- Proyecto 1: Agenda Web -->
+                    <article class="project-card-featured reveal" data-category="real">
+                        <div class="project-mockup-wrapper bg-lavender">
+                            <div class="mini-app-mockup">
+                                <div class="mini-app-header">
+                                    <span class="mock-logo">nexo.</span>
+                                    <span class="mock-title">Agenda Médica</span>
+                                    <span class="mock-badge-dot">● Activo</span>
+                                </div>
+                                <div class="mini-app-content">
+                                    <div class="mini-col">
+                                        <div class="mini-card-item"><span>Citas del día</span></div>
+                                        <div class="mini-card-item"><span>Pacientes (120+)</span></div>
+                                    </div>
+                                    <div class="mini-col">
+                                        <div class="mini-card-item highlight"><span>Calendario interactivo</span></div>
+                                        <div class="mini-card-item"><span>Notificaciones WhatsApp</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-info-body">
+                            <span class="project-type-tag">PROFESIONAL / PROYECTO REAL</span>
+                            <h3 class="project-name">Agenda Web · Gestión de citas médicas</h3>
+                            <p class="project-summary">
+                                Aplicación web para un consultorio médico: pacientes, citas con validación de horarios, calendario interactivo, mensajería y exportación de reportes a Excel con más de 30 pruebas PHPUnit.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">PHP (MVC)</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">PHPUnit</span>
+                            </div>
+                            <div class="project-actions-row">
+                                <button class="btn-project-link" data-project="agenda-web">
+                                    Ver proyecto <span class="arrow">↗</span>
+                                </button>
+                                <a href="https://saludlife-evekccewe0a6drem.chilecentral-01.azurewebsites.net" target="_blank" rel="noopener noreferrer" class="btn-project-secondary">
+                                    Demo en línea <span class="arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2: JASVORY CRM -->
+                    <article class="project-card-featured reveal" data-category="team">
+                        <div class="project-mockup-wrapper bg-sage">
+                            <div class="mini-app-mockup">
+                                <div class="mini-app-header">
+                                    <span class="mock-logo">forma.</span>
+                                    <span class="mock-title">JASVORY CRM</span>
+                                    <span class="mock-badge-dot">● En equipo</span>
+                                </div>
+                                <div class="mini-app-content">
+                                    <div class="mini-col">
+                                        <div class="mini-card-item"><span>Prospectos</span></div>
+                                        <div class="mini-card-item"><span>Reuniones</span></div>
+                                    </div>
+                                    <div class="mini-col">
+                                        <div class="mini-card-item highlight"><span>Pipeline comercial</span></div>
+                                        <div class="mini-card-item"><span>Módulo Asistido por IA</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-info-body">
+                            <span class="project-type-tag">PROFESIONAL / PROYECTO PROPIO</span>
+                            <h3 class="project-name">JASVORY CRM · Gestión Comercial</h3>
+                            <p class="project-summary">
+                                CRM desarrollado en equipo para estructurar el proceso de ventas: administración de clientes y prospectos, roles de usuario, agendamiento de reuniones y módulo de prospección asistido por IA.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">XAMPP</span>
+                                <span class="tag">Arquitectura Limpia</span>
+                            </div>
+                            <div class="project-actions-row">
+                                <button class="btn-project-link" data-project="jasvory-crm">
+                                    Ver proyecto <span class="arrow">↗</span>
+                                </button>
+                                <span class="badge-private">Código privado</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3: Plataforma Compraventa de Motos -->
+                    <article class="project-card-featured reveal" data-category="real">
+                        <div class="project-mockup-wrapper bg-mocha">
+                            <div class="mini-app-mockup">
+                                <div class="mini-app-header">
+                                    <span class="mock-logo">moto.hub</span>
+                                    <span class="mock-title">Vitrina Digital</span>
+                                    <span class="mock-badge-dot">● Catálogo</span>
+                                </div>
+                                <div class="mini-app-content">
+                                    <div class="mini-col">
+                                        <div class="mini-card-item"><span>Motos en venta</span></div>
+                                        <div class="mini-card-item"><span>Ficha técnica</span></div>
+                                    </div>
+                                    <div class="mini-col">
+                                        <div class="mini-card-item highlight"><span>Panel de inventario</span></div>
+                                        <div class="mini-card-item"><span>Contacto directo WhatsApp</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-info-body">
+                            <span class="project-type-tag">PROFESIONAL / PROYECTO REAL</span>
+                            <h3 class="project-name">Plataforma web para compraventas de motos</h3>
+                            <p class="project-summary">
+                                Vitrina digital e inventario para compraventas y concesionarios de motos. Permite administrar el stock en tiempo real y enlaza la consulta de clientes directamente a WhatsApp.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">CSS3</span>
+                            </div>
+                            <div class="project-actions-row">
+                                <button class="btn-project-link" data-project="plataforma-motos">
+                                    Ver proyecto <span class="arrow">↗</span>
+                                </button>
+                                <span class="badge-private">Código privado</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4: SaludLife (Java POO) -->
+                    <article class="project-card-featured reveal" data-category="java">
+                        <div class="project-mockup-wrapper bg-steel">
+                            <div class="mini-app-mockup">
+                                <div class="mini-app-header">
+                                    <span class="mock-logo">java.app</span>
+                                    <span class="mock-title">SaludLife Desktop</span>
+                                    <span class="mock-badge-dot">● POO</span>
+                                </div>
+                                <div class="mini-app-content">
+                                    <div class="mini-col">
+                                        <div class="mini-card-item"><span>Doctores &amp; Pacientes</span></div>
+                                        <div class="mini-card-item"><span>Historias Clínicas</span></div>
+                                    </div>
+                                    <div class="mini-col">
+                                        <div class="mini-card-item highlight"><span>Lógica en Capas (POO)</span></div>
+                                        <div class="mini-card-item"><span>Validación de Citas</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-info-body">
+                            <span class="project-type-tag">ACADÉMICO / POO</span>
+                            <h3 class="project-name">SaludLife · Sistema de citas médicas en Java</h3>
+                            <p class="project-summary">
+                                Software en Java (NetBeans) con arquitectura orientada a objetos para la gestión de citas médicas, validación de disponibilidad y control seguro de historias clínicas.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">NetBeans</span>
+                                <span class="tag">POO</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <div class="project-actions-row">
+                                <button class="btn-project-link" data-project="saludlife">
+                                    Ver proyecto <span class="arrow">↗</span>
+                                </button>
+                                <a href="https://github.com/Jjose17/SistemaClinico" target="_blank" rel="noopener noreferrer" class="btn-project-secondary">
+                                    GitHub <span class="arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Más Proyectos (Tarjetas Complementarias con Filtrado) -->
+                <div class="more-projects-section">
+                    <h3 class="more-projects-title reveal">Otros proyectos web y de software</h3>
+                    
+                    <div class="secondary-projects-grid">
+                        <!-- Consultorio Médico SEO -->
+                        <div class="secondary-card reveal" data-category="real">
+                            <span class="sec-badge">PROYECTO REAL</span>
+                            <h4>Sitio web para consultorio médico</h4>
+                            <p>Sitio público con estrategia SEO on-page para visibilidad en Google.</p>
+                            <div class="tags-mini"><span>HTML5</span><span>CSS3</span><span>PHP</span><span>SEO</span></div>
+                            <button class="btn-inline" data-project="sitio-consultorio">Detalles ↗</button>
+                        </div>
+
+                        <!-- VidaRol V2 -->
+                        <div class="secondary-card reveal" data-category="web">
+                            <span class="sec-badge">FRAMEWORK MVC PROPIO</span>
+                            <h4>VidaRol V2 · Panel de facciones</h4>
+                            <p>Panel web con ranking, sistema de puntos y arquitectura MVC propia.</p>
+                            <div class="tags-mini"><span>PHP MVC</span><span>MySQL</span><span>Video Demo</span></div>
+                            <button class="btn-inline" data-project="vidarol-v2">Detalles ↗</button>
+                        </div>
+
+                        <!-- Mi Tienda (Ropa) -->
+                        <div class="secondary-card reveal" data-category="web">
+                            <span class="sec-badge">INVENTARIO CLOUD</span>
+                            <h4>Mi tienda · Ropa con Google Sheets</h4>
+                            <p>Catálogo conectado en tiempo real a Google Sheets sin base de datos pesada.</p>
+                            <div class="tags-mini"><span>JavaScript</span><span>Google Sheets API</span></div>
+                            <button class="btn-inline" data-project="pagina-ropa">Detalles ↗</button>
+                        </div>
+
+                        <!-- BigTecStore -->
+                        <div class="secondary-card reveal" data-category="web">
+                            <span class="sec-badge">E-COMMERCE</span>
+                            <h4>BigTecStore · Tienda de audífonos</h4>
+                            <p>Catálogo de audífonos con canal de compra directa por WhatsApp.</p>
+                            <div class="tags-mini"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+                            <button class="btn-inline" data-project="pagina-audifonos">Detalles ↗</button>
+                        </div>
+
+                        <!-- Discord Facción -->
+                        <div class="secondary-card reveal" data-category="web">
+                            <span class="sec-badge">API INTEGRATION</span>
+                            <h4>Página para comunidad Discord</h4>
+                            <p>Autenticación con Discord OAuth y gestión de permisos por rangos.</p>
+                            <div class="tags-mini"><span>Discord API</span><span>JavaScript</span></div>
+                            <button class="btn-inline" data-project="pagina-discord">Detalles ↗</button>
+                        </div>
+
+                        <!-- Sistema Ventas -->
+                        <div class="secondary-card reveal" data-category="java">
+                            <span class="sec-badge">GESTIÓN COMERCIAL</span>
+                            <h4>Sistema de gestión de ventas</h4>
+                            <p>Software para administración de productos, inventario y ventas comerciales.</p>
+                            <div class="tags-mini"><span>Java</span><span>MySQL</span><span>GitHub</span></div>
+                            <button class="btn-inline" data-project="gestion-ventas">Detalles ↗</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== 05 / CONECTEMOS (VIBRANT PURPLE BANNER CON COPIADO RÁPIDO) ===================== -->
+        <section id="contacto" class="section section-connect">
+            <div class="main-container connect-container">
+                <div class="connect-left reveal">
+                    <span class="connect-badge">05 / CONECTEMOS</span>
+                    <h2 class="connect-title">¿Construimos<br>algo juntos?</h2>
+                    <p class="connect-subtitle">
+                        Una idea, un proyecto o una buena conversación.<br>
+                        Me encantará saber de ti.
+                    </p>
+                </div>
+
+                <div class="connect-right reveal">
+                    <!-- Botón Principal con acción de Copiar y Enlace -->
+                    <button class="btn-email-primary" id="btnCopyEmailBanner" data-email="juanjoseacevedodeveloper@gmail.com">
+                        <span>Copiar correo electrónico</span>
+                        <span class="arrow">📋</span>
+                    </button>
+
+                    <div class="connect-buttons-row">
+                        <a href="https://github.com/Jjose17" target="_blank" rel="noopener noreferrer" class="btn-connect-pill">
+                            GitHub <span class="arrow">↗</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/juan-jose-acevedo-melo/" target="_blank" rel="noopener noreferrer" class="btn-connect-pill">
+                            LinkedIn <span class="arrow">↗</span>
+                        </a>
+                        <a href="HV Juan Jose Acevedo.pdf" download class="btn-connect-pill">
+                            CV <span class="arrow">↓</span>
+                        </a>
+                    </div>
+
+                    <div class="connect-footer-meta">
+                        <span class="meta-label">TU CORREO DE CONTACTO</span>
+                        <a href="mailto:juanjoseacevedodeveloper@gmail.com" class="meta-email" title="Enviar correo">juanjoseacevedodeveloper@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== TOAST NOTIFICATION FLOTANTE ===================== -->
+    <div id="toastNotification" class="toast-notification" role="status" aria-live="polite">
+        <span class="toast-icon">✓</span>
+        <span id="toastMessage">Correo copiado al portapapeles</span>
+    </div>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="main-container footer-grid">
+            <div class="footer-left">
+                <span class="logo-code">&lt;ja/&gt;</span>
+                <span class="footer-copy-text">Juan José Acevedo · Desarrollador de software</span>
+            </div>
+
+            <div class="footer-center">
+                <span class="footer-badge">Pensado con intención. Construido con detalle.</span>
+            </div>
+
+            <div class="footer-right">
+                <a href="#inicio" class="back-to-top">
+                    Volver arriba <span class="arrow">↑</span>
+                </a>
             </div>
         </div>
-    </section>
-
-    <section id="habilidades" class="section">
-        <h2 class="section-title">Habilidades</h2>
-        <div class="container">
-            <div class="grid-3">
-                <div class="skill-card">
-                    <h3>Habilidades blandas</h3>
-                    <ul>
-                        <li>Comunicación con clientes y levantamiento de requisitos.</li>
-                        <li>Trabajo en equipo y colaboración (Slack, Git y GitHub).</li>
-                        <li>Resolución de problemas.</li>
-                        <li>Autonomía y gestión del tiempo.</li>
-                        <li>Atención al detalle y responsabilidad.</li>
-                        <li>Iniciativa y aprendizaje continuo.</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Habilidades técnicas</h3>
-                    <ul>
-                        <li>Desarrollo web: HTML, CSS, JavaScript y PHP (arquitectura MVC)</li>
-                        <li>Bases de datos relacionales: MySQL y MySQL Workbench</li>
-                        <li>Programación orientada a objetos con Java (NetBeans)</li>
-                        <li>Pruebas automatizadas con PHPUnit</li>
-                        <li>Git, GitHub, Visual Studio y fundamentos de Linux</li>
-                        <li>SEO on-page básico y Power BI (básico)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <h3 class="subtitulo mt-2">Certificaciones</h3>
-            <div class="grid-3">
-                <div class="certificacion-card">
-                    <div class="certificacion-icono cisco">C</div>
-                    <h4>JavaScript Essentials 1</h4>
-                    <p>Cisco Networking Academy · oct. 2026</p>
-                    <a href="certificados/JavaScript_Essentials_1_JuanJoseAcevedoMelo.pdf" target="_blank" class="btn-link">Ver certificado</a>
-                </div>
-
-            <div class="grid-3">
-                <div class="certificacion-card">
-                    <div class="certificacion-icono oracle">C</div>
-                    <h4>Java Programming – English</h4>
-                    <p>Oracle Academy · Nov. 2026</p>
-                    <a href="certificados/ACEVEDO MELO JUAN JOSE_Java_Programming.pdf" target="_blank" class="btn-link">Ver certificado</a>
-                </div>    
-
-                <div class="certificacion-card">
-                    <div class="certificacion-icono cisco">C</div>
-                    <h4>Fundamentos de Linux</h4>
-                    <p>Cisco Networking Academy · oct. 2026</p>
-                    <a href="certificados/Linux_Essentials_JuanJoseAcevedoMelo.pdf" target="_blank" class="btn-link">Ver certificado</a>
-                </div>
-
-                <div class="certificacion-card">
-                    <div class="certificacion-icono oracle">O</div>
-                    <h4>Java Foundations</h4>
-                    <p>Oracle Academy · may. 2026</p>
-                    <a href="certificados/ACEVEDO MELO JUAN JOSE_Java_Foundations.pdf" target="_blank" class="btn-link">Ver certificado</a>
-                </div>
-
-                <div class="certificacion-card">
-                    <div class="certificacion-icono oracle">O</div>
-                    <h4>Java Fundamentals</h4>
-                    <p>Oracle Academy · nov. 2025</p>
-                    <a href="certificados/Oracle Java Fundamental.pdf" target="_blank" class="btn-link">Ver certificado</a>
-                </div>
-
-                <div class="certificacion-card">
-                    <div class="certificacion-icono oracle">O</div>
-                    <h4>Database Foundations</h4>
-                    <p>Oracle Academy · nov. 2025</p>
-                    <a href="certificados/Oracle DB Fundations.pdf" target="_blank" class="btn-link">Ver certificado</a>
-                </div>
-
-                <div class="certificacion-card">
-                    <div class="certificacion-icono microsoft">M</div>
-                    <h4>Compilación con Power BI</h4>
-                    <p>Microsoft · abr. 2025</p>
-                    <a href="certificados/Introduccion a Power BI.pdf" target="_blank" class="btn-link">Ver certificado</a>
-                </div>
-
-                <div class="certificacion-card">
-                    <div class="certificacion-icono microsoft">M</div>
-                    <h4>Introducción a C#</h4>
-                    <p>Microsoft · mar. 2025</p>
-                    <a href="certificados/Introduccion a C.pdf" target="_blank" class="btn-link">Ver certificado</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="proyectos" class="section">
-        <h2 class="section-title">Proyectos</h2>
-        <div class="container">
-            <h3 class="subtitulo">Proyectos profesionales</h3>
-            <div class="grid-3">
-                <div class="project-card">
-                    <div class="project-badge completo">Completo · Proyecto real</div>
-                    <div class="project-content">
-                        <h3>Agenda Web – Gestión de citas médicas</h3>
-                        <p>Aplicación web para un consultorio médico: pacientes, citas, calendario, notificaciones y reportes.</p>
-                        <button class="btn-link" data-project="agenda-web">Ver proyecto</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-badge completo">Completo · Proyecto propio</div>
-                    <div class="project-content">
-                        <h3>JASVORY CRM</h3>
-                        <p>CRM desarrollado en equipo para gestionar clientes, prospectos y reuniones comerciales.</p>
-                        <button class="btn-link" data-project="jasvory-crm">Ver proyecto</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-badge completo">Completo · Proyecto real</div>
-                    <div class="project-content">
-                        <h3>Sitio web profesional para consultorio médico</h3>
-                        <p>Sitio público de un médico para presentar sus servicios y ser encontrado en buscadores.</p>
-                        <button class="btn-link" data-project="sitio-consultorio">Ver proyecto</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-badge completo">Completo</div>
-                    <div class="project-content">
-                        <h3>Plataforma web para compraventas de motos</h3>
-                        <p>Vitrina digital con catálogo e inventario para concesionarios y compraventas de motos.</p>
-                        <button class="btn-link" data-project="plataforma-motos">Ver proyecto</button>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="subtitulo mt-2">Otros proyectos web y académicos</h3>
-            <div class="grid-3">
-                <div class="project-card">
-                    <div class="project-badge incompleto">En desarrollo</div>
-                    <div class="project-content">
-                        <h3>VidaRol V2 – Panel de facciones</h3>
-                        <p>Panel de administración de facciones para un servidor de rol, con framework MVC propio.</p>
-                        <button class="btn-link" data-project="vidarol-v2">Ver proyecto</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-badge completo">Completo</div>
-                    <div class="project-content">
-                        <h3>Universidad Modular</h3>
-                        <p>Sitio web de una universidad con portal estudiantil conectado a una base de datos.</p>
-                        <button class="btn-link" data-project="universidad-modular">Ver proyecto</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-badge completo">Completo</div>
-                    <div class="project-content">
-                        <h3>Sistema de citas médicas (SaludLife)</h3>
-                        <p>Aplicación en Java para la gestión, registro y consulta de citas médicas, pacientes, doctores y secretarias.</p>
-                        <button class="btn-link" data-project="saludlife">Ver proyecto</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-badge incompleto">En desarrollo</div>
-                    <div class="project-content">
-                        <h3>Sistema de gestión de ventas</h3>
-                        <p>Software para administrar productos, clientes y ventas, pensado para tiendas de barrio.</p>
-                        <button class="btn-link" data-project="gestion-ventas">Ver proyecto</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-badge completo">Completo</div>
-                    <div class="project-content">
-                        <h3>Página web de presentación</h3>
-                        <p>Página web para presentar y explicar el sistema de citas médicas.</p>
-                        <button class="btn-link" data-project="pagina-presentacion">Ver proyecto</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-badge incompleto">En desarrollo</div>
-                    <div class="project-content">
-                        <h3>Página web para servidor de Discord</h3>
-                        <p>Página para mostrar la información de una comunidad de Discord y su facción (servidor SAMP), con inicio de sesión con Discord.</p>
-                        <button class="btn-link" data-project="pagina-discord">Ver proyecto</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-badge incompleto">En desarrollo</div>
-                    <div class="project-content">
-                        <h3>Página web de postres</h3>
-                        <p>Página para un emprendimiento de postres artesanales.</p>
-                        <button class="btn-link" data-project="pagina-postres">Ver proyecto</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-badge completo">Completo</div>
-                    <div class="project-content">
-                        <h3>BigTecStore – Tienda de audífonos</h3>
-                        <p>Página para un emprendimiento de venta de audífonos.</p>
-                        <button class="btn-link" data-project="pagina-audifonos">Ver proyecto</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-badge incompleto">En desarrollo</div>
-                    <div class="project-content">
-                        <h3>Mi tienda – Ropa nueva y de segunda mano</h3>
-                        <p>Página para un emprendimiento de venta de ropa nueva y de segunda mano.</p>
-                        <button class="btn-link" data-project="pagina-ropa">Ver proyecto</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; <span id="anio"></span> Juan Jose Acevedo Melo. Todos los derechos reservados.</p>
     </footer>
 
     <!-- ===================== MODALES DE PROYECTOS ===================== -->
 
-    <div id="agenda-web" class="project-modal">
+    <!-- Modal 1: Agenda Web -->
+    <div id="agenda-web" class="project-modal" role="dialog" aria-modal="true" aria-labelledby="title-agenda-web">
         <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Agenda Web – Gestión de citas médicas</h2>
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">PROYECTO PROFESIONAL REAL</span>
+                <h2 id="title-agenda-web">Agenda Web – Gestión de citas médicas</h2>
+                <p class="modal-period"><strong>Periodo:</strong> agosto – noviembre de 2026</p>
+            </div>
             <div class="modal-body">
                 <h3>Descripción del proyecto</h3>
-                <p>Aplicación web para un consultorio médico que organiza los pacientes, las citas y la agenda del doctor y de la secretaria, y avisa a los pacientes por correo y WhatsApp.</p>
-                <p><strong>Periodo:</strong> agosto – noviembre de 2026</p>
+                <p>Aplicación web para un consultorio médico que organiza los pacientes, las citas y la agenda del doctor y de la secretaria, automatizando avisos a los pacientes por correo electrónico y WhatsApp.</p>
+                
                 <h3>Funcionalidades principales</h3>
                 <ul>
-                    <li>Gestión de pacientes y de citas, con validación de disponibilidad.</li>
-                    <li>Tipos de cita y horarios configurables.</li>
-                    <li>Calendario interactivo con reprogramación de citas.</li>
-                    <li>Notificaciones por correo y enlace de WhatsApp.</li>
-                    <li>Página pública para que el paciente confirme o cancele su cita sin iniciar sesión.</li>
+                    <li>Gestión integral de pacientes y citas con validación de disponibilidad horaria.</li>
+                    <li>Tipos de cita y horarios configurables según la especialidad.</li>
+                    <li>Calendario interactivo con reprogramación ágil de citas.</li>
+                    <li>Notificaciones automáticas por correo y enlaces directos de WhatsApp.</li>
+                    <li>Página pública para que el paciente confirme o cancele su cita sin requerir inicio de sesión.</li>
                     <li>Mensajería interna entre doctor y secretaría.</li>
-                    <li>Panel de control, estadísticas y exportación de reportes a Excel.</li>
-                    <li>Más de 30 pruebas automatizadas con PHPUnit.</li>
+                    <li>Panel de control, estadísticas y exportación de reportes a formato Excel.</li>
+                    <li>Más de 30 pruebas automatizadas desarrolladas con PHPUnit.</li>
                 </ul>
-                <h3>Tecnologías</h3>
-                <p>PHP, MySQL, JavaScript, arquitectura MVC propia, PHPMailer, PhpSpreadsheet y PHPUnit.</p>
-                <h3>Documentos</h3>
+
+                <h3>Tecnologías aplicadas</h3>
+                <p class="modal-techs">PHP, MySQL, JavaScript, arquitectura MVC propia, PHPMailer, PhpSpreadsheet y PHPUnit.</p>
+
+                <h3>Enlaces y demostración</h3>
                 <div class="documentos-links">
-                    <a href="https://saludlife-evekccewe0a6drem.chilecentral-01.azurewebsites.net" target="_blank" class="btn-doc">Ver demo en línea</a>
-                    <span class="btn-doc privado">Código privado</span>
+                    <a href="https://saludlife-evekccewe0a6drem.chilecentral-01.azurewebsites.net" target="_blank" rel="noopener noreferrer" class="btn-doc demo">Ver demo en línea ↗</a>
+                    <span class="btn-doc privado">Código privado (cliente real)</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="jasvory-crm" class="project-modal">
+    <!-- Modal 2: JASVORY CRM -->
+    <div id="jasvory-crm" class="project-modal" role="dialog" aria-modal="true" aria-labelledby="title-jasvory-crm">
         <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>JASVORY CRM</h2>
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">PROYECTO PROPIO EN EQUIPO</span>
+                <h2 id="title-jasvory-crm">JASVORY CRM – Software &amp; Digital Solutions</h2>
+                <p class="modal-period"><strong>Periodo:</strong> octubre – noviembre de 2026</p>
+            </div>
             <div class="modal-body">
                 <h3>Descripción del proyecto</h3>
-                <p>CRM de JASVORY – Software &amp; Digital Solutions, el proyecto que desarrollo junto a mi equipo para organizar el trabajo comercial: desde encontrar un prospecto hasta agendar la reunión.</p>
-                <p><strong>Periodo:</strong> octubre – noviembre de 2026</p>
+                <p>CRM desarrollado junto a mi equipo de desarrollo para organizar el flujo comercial completo: desde la prospección del cliente potencial hasta el agendamiento y cierre de la reunión comercial.</p>
+
                 <h3>Funcionalidades principales</h3>
                 <ul>
-                    <li>Gestión de clientes y prospectos.</li>
-                    <li>Roles de usuario: administrador y comerciales.</li>
-                    <li>Agendamiento de reuniones.</li>
-                    <li>Dashboard de seguimiento comercial.</li>
-                    <li>Módulo de prospección asistido por inteligencia artificial.</li>
+                    <li>Gestión centralizada de clientes y prospectos comerciales.</li>
+                    <li>Control de acceso con roles de usuario (administrador y equipo comercial).</li>
+                    <li>Agendamiento de reuniones y seguimiento de acuerdos.</li>
+                    <li>Dashboard interactivo con métricas clave de conversión.</li>
+                    <li>Módulo de prospección comercial asistido por inteligencia artificial.</li>
                 </ul>
-                <h3>Tecnologías</h3>
-                <p>PHP, MySQL y XAMPP, sin frameworks.</p>
-                <h3>Documentos</h3>
+
+                <h3>Tecnologías aplicadas</h3>
+                <p class="modal-techs">PHP, MySQL y entorno XAMPP con arquitectura limpia sin frameworks pesados.</p>
+
+                <h3>Enlaces</h3>
                 <div class="documentos-links">
-                    <span class="btn-doc privado">Código privado</span>
+                    <span class="btn-doc privado">Código privado (propiedad del equipo)</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="sitio-consultorio" class="project-modal">
+    <!-- Modal 3: Sitio Consultorio -->
+    <div id="sitio-consultorio" class="project-modal" role="dialog" aria-modal="true">
         <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Sitio web profesional para consultorio médico</h2>
-            <div class="modal-body">
-                <h3>Descripción del proyecto</h3>
-                <p>Sitio web público de un consultorio médico, pensado para presentar al doctor y sus servicios y facilitar que los pacientes lo encuentren en Google.</p>
-                <p><strong>Periodo:</strong> agosto – septiembre de 2026</p>
-                <h3>Funcionalidades principales</h3>
-                <ul>
-                    <li>Diseño y desarrollo del sitio completo.</li>
-                    <li>Optimización SEO on-page: investigación de palabras clave, títulos y meta descripciones.</li>
-                </ul>
-                <h3>Tecnologías</h3>
-                <p>HTML, CSS, JavaScript y PHP.</p>
-                <h3>Documentos</h3>
-                <div class="documentos-links">
-                    <span class="btn-doc privado">Código privado</span>
-                </div>
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">PROYECTO REAL</span>
+                <h2>Sitio web profesional para consultorio médico</h2>
+                <p class="modal-period"><strong>Periodo:</strong> agosto – septiembre de 2026</p>
             </div>
-        </div>
-    </div>
-
-    <div id="plataforma-motos" class="project-modal">
-        <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Plataforma web para compraventas de motos</h2>
             <div class="modal-body">
                 <h3>Descripción del proyecto</h3>
-                <p>Plataforma web para que concesionarios y compraventas de motos muestren su inventario en línea y reciban contactos de clientes.</p>
-                <p><strong>Periodo:</strong> septiembre de 2026</p>
+                <p>Sitio web público para posicionar los servicios de un médico especialista, optimizando la visibilidad orgánica en Google para atraer nuevos pacientes.</p>
                 <h3>Funcionalidades principales</h3>
                 <ul>
-                    <li>Catálogo de motos con ficha de cada una.</li>
-                    <li>Panel de inventario para administrar las motos.</li>
-                    <li>Contacto directo con el vendedor por WhatsApp.</li>
+                    <li>Diseño y desarrollo responsive de punta a punta.</li>
+                    <li>Estrategia y optimización SEO on-page: análisis de palabras clave, semántica HTML5, metadatos y velocidad de carga.</li>
                 </ul>
-                <h3>Documentos</h3>
+                <h3>Tecnologías aplicadas</h3>
+                <p class="modal-techs">HTML5, CSS3, JavaScript y PHP.</p>
                 <div class="documentos-links">
                     <span class="btn-doc privado">Código privado</span>
                 </div>
@@ -384,28 +816,59 @@
         </div>
     </div>
 
-    <div id="vidarol-v2" class="project-modal">
+    <!-- Modal 4: Plataforma Motos -->
+    <div id="plataforma-motos" class="project-modal" role="dialog" aria-modal="true">
         <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>VidaRol V2 – Panel de facciones</h2>
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">PROYECTO REAL</span>
+                <h2>Plataforma web para compraventas de motos</h2>
+                <p class="modal-period"><strong>Periodo:</strong> septiembre de 2026</p>
+            </div>
             <div class="modal-body">
                 <h3>Descripción del proyecto</h3>
-                <p>Panel web para administrar las facciones de la comunidad VidaRol (servidor de rol en GTA San Andreas Multiplayer), construido sobre un framework MVC hecho desde cero.</p>
+                <p>Plataforma para concesionarios y compraventas de motocicletas, permitiéndoles publicar su inventario en línea y recibir consultas inmediatas de compradores.</p>
                 <h3>Funcionalidades principales</h3>
                 <ul>
-                    <li>Módulo de actividades.</li>
-                    <li>Ranking y sistema de puntos.</li>
-                    <li>Gestión de facciones.</li>
+                    <li>Catálogo de motocicletas con ficha técnica detallada y galería.</li>
+                    <li>Panel administrativo de inventario para alta, baja y modificación de vehículos.</li>
+                    <li>Enlace de contacto directo con el asesor comercial a través de WhatsApp.</li>
                 </ul>
-                <h3>Tecnologías</h3>
-                <p>PHP con arquitectura MVC propia y MySQL.</p>
-                <h3>Demostración del proyecto</h3>
+                <h3>Tecnologías aplicadas</h3>
+                <p class="modal-techs">PHP, MySQL, JavaScript y diseño CSS responsivo.</p>
+                <div class="documentos-links">
+                    <span class="btn-doc privado">Código privado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: VidaRol V2 -->
+    <div id="vidarol-v2" class="project-modal" role="dialog" aria-modal="true">
+        <div class="project-modal-content">
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">FRAMEWORK PROPIO</span>
+                <h2>VidaRol V2 – Panel de facciones</h2>
+            </div>
+            <div class="modal-body">
+                <h3>Descripción del proyecto</h3>
+                <p>Panel web para administrar facciones de la comunidad VidaRol (servidor en San Andreas Multiplayer), desarrollado sobre un framework MVC construido desde cero en PHP.</p>
+                <h3>Funcionalidades principales</h3>
+                <ul>
+                    <li>Módulo de actividades y registro de miembros.</li>
+                    <li>Ranking de desempeño y asignación de puntos.</li>
+                    <li>Gestión y auditoría de permisos de facción.</li>
+                </ul>
+                <h3>Tecnologías aplicadas</h3>
+                <p class="modal-techs">PHP con arquitectura MVC personalizada y MySQL.</p>
+                
+                <h3>Demostración en video</h3>
                 <div class="video-container">
                     <video controls preload="metadata" src="videos/V2.mp4">
                         Tu navegador no soporta la reproducción de video.
                     </video>
                 </div>
-                <h3>Documentos</h3>
                 <div class="documentos-links">
                     <span class="btn-doc privado">Código privado</span>
                 </div>
@@ -413,118 +876,96 @@
         </div>
     </div>
 
-    <div id="universidad-modular" class="project-modal">
+    <!-- Modal 6: SaludLife Java -->
+    <div id="saludlife" class="project-modal" role="dialog" aria-modal="true">
         <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Universidad Modular</h2>
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">APLICACIÓN JAVA POO</span>
+                <h2>Sistema de citas médicas (SaludLife)</h2>
+            </div>
             <div class="modal-body">
                 <h3>Descripción del proyecto</h3>
-                <p>Sitio web de una universidad con un portal estudiantil que consulta información desde una base de datos.</p>
-                <p><strong>Periodo:</strong> octubre de 2026</p>
+                <p>Aplicación de escritorio orientada a optimizar la atención médica y asegurar consistencia transaccional en el agendamiento y validación de citas.</p>
                 <h3>Funcionalidades principales</h3>
                 <ul>
-                    <li>Sitio institucional con varias secciones.</li>
-                    <li>Portal estudiantil conectado a MySQL.</li>
+                    <li>Gestión de roles: pacientes, doctores y secretarias.</li>
+                    <li>Agendamiento, validación cruzada y modificación de citas médicas.</li>
+                    <li>Control seguro de historia clínica y datos sensibles del paciente.</li>
                 </ul>
-                <h3>Tecnologías</h3>
-                <p>HTML, CSS y JavaScript; PHP y MySQL (XAMPP) para el portal estudiantil.</p>
-                <h3>Documentos</h3>
+                <h3>Tecnologías aplicadas</h3>
+                <p class="modal-techs">Java, NetBeans, POO y base de datos relacional MySQL.</p>
+                <h3>Documentos y repositorio</h3>
                 <div class="documentos-links">
-                    <span class="btn-doc privado">Código privado</span>
+                    <a href="documentos/Manual%20de%20usuario%20BD.docx" target="_blank" class="btn-doc">Manual de Usuario (.docx)</a>
+                    <a href="documentos/DocFinalSaludLife.docx" target="_blank" class="btn-doc">Documento Final (.docx)</a>
+                    <a href="https://github.com/Jjose17/SistemaClinico" target="_blank" rel="noopener noreferrer" class="btn-doc">Código en GitHub ↗</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="saludlife" class="project-modal">
+    <!-- Modal 7: Gestión de Ventas -->
+    <div id="gestion-ventas" class="project-modal" role="dialog" aria-modal="true">
         <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Sistema de citas médicas (SaludLife)</h2>
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">SISTEMA COMERCIAL</span>
+                <h2>Sistema de gestión de ventas</h2>
+            </div>
             <div class="modal-body">
                 <h3>Descripción del proyecto</h3>
-                <p>Optimizar los tiempos de atención médica y garantizar la consistencia en el agendamiento y la validación de las citas a través de una aplicación.</p>
+                <p>Software enfocado en la administración ágil de inventario, registro de transacciones comerciales y control de clientes para microempresas y comercios locales.</p>
                 <h3>Funcionalidades principales</h3>
                 <ul>
-                    <li>Registro y gestión de usuarios (pacientes, médicos, secretarias).</li>
-                    <li>Programación, consulta y modificación de citas médicas.</li>
-                    <li>Gestión de historial médico y datos de pacientes.</li>
+                    <li>Registro y control de usuarios: clientes, vendedores y administradores.</li>
+                    <li>Programación, consulta y facturación de ventas.</li>
+                    <li>Control de stock de productos en inventario.</li>
                 </ul>
-                <h3>Tecnologías</h3>
-                <p>Java y NetBeans, con programación orientada a objetos.</p>
-                <h3>Documentos</h3>
                 <div class="documentos-links">
-                    <a href="documentos/Manual%20de%20usuario%20BD.docx" target="_blank" class="btn-doc">Manual de Usuario</a>
-                    <a href="documentos/DocFinalSaludLife.docx" target="_blank" class="btn-doc">Documento Final</a>
-                    <a href="https://github.com/Jjose17/SistemaClinico" target="_blank" class="btn-doc">Código Final</a>
+                    <a href="https://github.com/Jjose17/Sistema_Ventas_JA" target="_blank" rel="noopener noreferrer" class="btn-doc">Código en GitHub ↗</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="gestion-ventas" class="project-modal">
+    <!-- Modal 8: Página de Presentación -->
+    <div id="pagina-presentacion" class="project-modal" role="dialog" aria-modal="true">
         <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Sistema de gestión de ventas</h2>
-            <div class="modal-body">
-                <h3>Descripción del proyecto</h3>
-                <p>Optimizar los procesos de venta y mejorar la eficiencia en la gestión de clientes y productos.</p>
-                <h3>Funcionalidades principales</h3>
-                <ul>
-                    <li>Registro y gestión de usuarios (clientes, vendedores, administradores).</li>
-                    <li>Programación, consulta y modificación de ventas.</li>
-                    <li>Gestión de inventario y datos de productos.</li>
-                </ul>
-                <h3>Documentos</h3>
-                <div class="documentos-links">
-                    <a href="https://github.com/Jjose17/Sistema_Ventas_JA" target="_blank" class="btn-doc">Código Final</a>
-                </div>
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">LANDING PAGE</span>
+                <h2>Página web de presentación (SaludLife)</h2>
             </div>
-        </div>
-    </div>
-
-    <div id="pagina-presentacion" class="project-modal">
-        <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Página web de presentación</h2>
             <div class="modal-body">
-                <h3>Descripción del proyecto</h3>
-                <p>Presentación del proyecto de sistema de gestión de citas médicas usando HTML, CSS y JavaScript.</p>
-                <h3>Tecnologías</h3>
-                <p>HTML, CSS y JavaScript.</p>
-                <h3>Demostración del proyecto</h3>
+                <p>Landing page explicativa e interactiva para presentar la propuesta de valor del sistema de citas médicas.</p>
                 <div class="video-container">
                     <video controls preload="metadata" src="videos/SaludLifePresentacion.mp4">
-                        Tu navegador no soporta la reproducción de video.
+                        Tu navegador no soporta video.
                     </video>
                 </div>
-                <h3>Documentos</h3>
                 <div class="documentos-links">
-                    <a href="https://github.com/Jjose17/Pagina-proyecto-SistemaClinico" target="_blank" class="btn-doc">Código Final</a>
+                    <a href="https://github.com/Jjose17/Pagina-proyecto-SistemaClinico" target="_blank" rel="noopener noreferrer" class="btn-doc">Código en GitHub ↗</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="pagina-discord" class="project-modal">
+    <!-- Modal 9: Servidor Discord -->
+    <div id="pagina-discord" class="project-modal" role="dialog" aria-modal="true">
         <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Página web para servidor de Discord</h2>
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">INTEGRACIÓN OAUTH</span>
+                <h2>Página web para comunidad de Discord</h2>
+            </div>
             <div class="modal-body">
-                <h3>Descripción del proyecto</h3>
-                <p>Página diseñada para la comunidad de Discord, con el objetivo de facilitar la actividad de la facción, sus reglas y demás información vital para la organización.</p>
-                <h3>Funcionalidades principales</h3>
-                <ul>
-                    <li>Inicio de sesión con la API de Discord (muestra nombre de usuario y foto de perfil).</li>
-                    <li>Gracias a la API, las personas con rango (General, Comandante y Capitán) pueden agregar contenido a las secciones.</li>
-                    <li>Enlaces al Discord oficial de la facción y a la página oficial del servidor.</li>
-                </ul>
-                <h3>Demostración del proyecto</h3>
+                <p>Plataforma para comunidad de rol con integración de la API OAuth2 de Discord para validación de perfiles y permisos editoriales según rangos.</p>
                 <div class="video-container">
                     <video controls preload="metadata" src="videos/PD.mp4">
-                        Tu navegador no soporta la reproducción de video.
+                        Tu navegador no soporta video.
                     </video>
                 </div>
-                <h3>Documentos</h3>
                 <div class="documentos-links">
                     <span class="btn-doc privado">Código privado</span>
                 </div>
@@ -532,25 +973,21 @@
         </div>
     </div>
 
-    <div id="pagina-postres" class="project-modal">
+    <!-- Modal 10: Página de Postres -->
+    <div id="pagina-postres" class="project-modal" role="dialog" aria-modal="true">
         <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Página web de postres</h2>
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">EMPRENDIMIENTO</span>
+                <h2>Página web de postres caseros</h2>
+            </div>
             <div class="modal-body">
-                <h3>Descripción del proyecto</h3>
-                <p>Página diseñada para un emprendimiento de postres caseros.</p>
-                <h3>Funcionalidades principales</h3>
-                <ul>
-                    <li>Menú de postres y flanes, cada uno con su imagen.</li>
-                    <li>Contacto con la encargada por WhatsApp.</li>
-                </ul>
-                <h3>Demostración del proyecto</h3>
+                <p>Catálogo visual con menú de productos, precios y contacto directo por WhatsApp.</p>
                 <div class="video-container">
                     <video controls preload="metadata" src="videos/POSTRESHG.mp4">
-                        Tu navegador no soporta la reproducción de video.
+                        Tu navegador no soporta video.
                     </video>
                 </div>
-                <h3>Documentos</h3>
                 <div class="documentos-links">
                     <span class="btn-doc privado">Código privado</span>
                 </div>
@@ -558,56 +995,48 @@
         </div>
     </div>
 
-    <div id="pagina-audifonos" class="project-modal">
+    <!-- Modal 11: BigTecStore -->
+    <div id="pagina-audifonos" class="project-modal" role="dialog" aria-modal="true">
         <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>BigTecStore – Tienda de audífonos</h2>
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">E-COMMERCE TECH</span>
+                <h2>BigTecStore – Tienda de audífonos</h2>
+            </div>
             <div class="modal-body">
-                <h3>Descripción del proyecto</h3>
-                <p>Página diseñada para un emprendimiento de venta de audífonos.</p>
-                <h3>Funcionalidades principales</h3>
-                <ul>
-                    <li>Catálogo de audífonos, cada uno con su imagen.</li>
-                    <li>Contacto con la encargada por WhatsApp.</li>
-                </ul>
-                <h3>Demostración del proyecto</h3>
+                <p>Catálogo digital enfocado en accesorios y audífonos tecnológicos.</p>
                 <div class="video-container">
                     <video controls preload="metadata" src="videos/BigTecStore.mp4">
-                        Tu navegador no soporta la reproducción de video.
+                        Tu navegador no soporta video.
                     </video>
                 </div>
-                <h3>Documentos</h3>
                 <div class="documentos-links">
-                    <a href="https://github.com/Jjose17/BigTecStore" target="_blank" class="btn-doc">Código Final</a>
+                    <a href="https://github.com/Jjose17/BigTecStore" target="_blank" rel="noopener noreferrer" class="btn-doc">Código en GitHub ↗</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="pagina-ropa" class="project-modal">
+    <!-- Modal 12: Mi Tienda (Ropa) -->
+    <div id="pagina-ropa" class="project-modal" role="dialog" aria-modal="true">
         <div class="project-modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Mi tienda – Ropa nueva y de segunda mano</h2>
+            <button class="close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">GOOGLE SHEETS CMS</span>
+                <h2>Mi tienda – Ropa nueva y segunda mano</h2>
+            </div>
             <div class="modal-body">
                 <h3>Descripción del proyecto</h3>
-                <p>Página diseñada para un emprendimiento de venta de ropa nueva y de segunda mano.</p>
-                <h3>Funcionalidades principales</h3>
+                <p>Tienda digital cuyo inventario y precios se gestionan directamente en una hoja de Google Sheets, sincronizándose automáticamente con la web sin requerir bases de datos dedicadas.</p>
                 <ul>
-                    <li>Pantalla inicial de bienvenida.</li>
-                    <li>Dos secciones: ropa nueva y ropa de segunda mano; sin elegir ninguna, se ve toda la ropa disponible.</li>
-                    <li>Seis botones de categoría (todos, camisas, camisetas, pantalones, chaquetas y zapatos).</li>
-                    <li>Cada prenda muestra nombre, tipo, talla, precio y disponibilidad.</li>
-                    <li>El inventario se maneja en Google Sheets: al actualizar un producto, la página se actualiza en un minuto, sin base de datos.</li>
-                    <li>Carrito con las prendas elegidas, su información y el precio final.</li>
-                    <li>La compra se concreta por WhatsApp (pago y lugar de encuentro).</li>
+                    <li>Filtrado interactivo por categorías (todos, camisas, pantalones, chaquetas, etc.).</li>
+                    <li>Carrito de compras dinámico y confirmación de pedidos vía WhatsApp.</li>
                 </ul>
-                <h3>Demostración del proyecto</h3>
                 <div class="video-container">
                     <video controls preload="metadata" src="videos/TiendaWEB.mp4">
-                        Tu navegador no soporta la reproducción de video.
+                        Tu navegador no soporta video.
                     </video>
                 </div>
-                <h3>Documentos</h3>
                 <div class="documentos-links">
                     <span class="btn-doc privado">Código privado</span>
                 </div>
