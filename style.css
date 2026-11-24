@@ -516,3 +516,21 @@ body{
     color: #cbd5e0;
     font-size: 0.9rem;
 }
+
+/* ===== Ajustes agregados en la actualización ===== */
+.certificacion-icono.cisco{
+    background-color: #049fd9;
+}
+
+.container > .subtitulo{
+    margin-top: 0;
+}
+
+.container > .subtitulo.mt-2{
+    margin-top: 3rem;
+}
+
+.modal-body p strong{
+    color: #4299e1;
+}
+
